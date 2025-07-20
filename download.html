@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukrypt Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #495057;
+            text-align: center;
+        }
+
+        .header-text {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header-text span {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #adb5bd;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+            border-color: #dee2e6;
+        }
+
+        /* Faint background pattern from reference */
+        .card::before {
+           
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 80px;
+            color: #000;
+            opacity: 0.03;
+            z-index: 0;
+            padding: 20px;
+            text-align: right;
+            line-height: 1.5;
+            background-repeat: repeat;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover::before {
+            opacity: 0.05;
+        }
+        
+        /* Ensure content is above the pattern */
+        .card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background-color: #f8f9fa;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            box-shadow: 0 0 0 8px #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .icon-wrapper {
+            transform: scale(1.1);
+        }
+
+        .icon {
+            font-size: 32px;
+            color: #ff6b6b; /* Accent color from original theme */
+        }
+        
+        /* New card icon colors for variety */
+        .card:nth-child(1) .icon, .card:nth-child(4) .icon { color: #ff6600; }
+        .card:nth-child(2) .icon, .card:nth-child(5) .icon { color: #20c997; }
+        .card:nth-child(3) .icon, .card:nth-child(6) .icon { color: #339af0; }
+
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-text">
+        <span> Download</span>
+       
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">Android</div>
+            
+        </div>
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">IOS</div>
+       
+        </div>
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">Window</div>
+           
+        </div>
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">MAC</div>
+            <div class="description">Encryption</div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">WINDOW</div>
+            <div class="description">Encryption</div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper"><div class="icon"></div></div>
+            <div class="title">MAC</div>
+            <div class="description">Coming Soon</div>
+        </div>
+    </div>
+
+</body>
+</html>

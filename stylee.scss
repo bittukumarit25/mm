@@ -1,0 +1,209 @@
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  z-index: 1000;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.menu-section {
+  flex: 1;
+}
+
+.menu-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f9f9f9;
+}
+
+.menu-item img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.menu-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.menu-item p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.update {
+  max-width: 240px;
+}
+
+.update img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.trusted-lms-area bg-black{
+  
+    background-color: #e50914;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .btn-brand:hover {
+    background-color: #c40812;
+    color: white;
+  }
+
+  .btn-outline-brand {
+    border: 1px solid #e50914;
+    color: #e50914;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-brand:hover {
+    background-color: #e50914;
+    color: white;
+  }
+
+  .btn-outline-brand i {
+    color: #e50914;
+    transition: color 0.3s ease;
+  }
+
+  .btn-outline-brand:hover i {
+    color: white;
+  }
+
+  /* Center hero section */
+  .banner-area-marketing {
+    background-color: whitesmoke;
+    position: relative;
+    min-height: 52vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+
+  .hero-pattern-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .hero-pera-web-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    bottom: -116px;
+    
+  }
+
+ .hero-pera-mobile-image {
+    position: absolute;
+    right: -60px;
+    bottom: -145px;
+    width: 180px;
+    z-index: 2;
+}
+
+ 
+
+  .perspective-grid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero-pera-mobile-image {
+      right: -20px;
+      bottom: -20px;
+      width: 120px;
+    }
+
+    .hero-coin-image {
+      width: 60px;
+      transform: translate(-50%, -60%);
+    }
+
+    .hero-pattern-image-container {
+      max-width: 320px;
+    }
+  }
+
+
+
+<div class="banner-area-marketing">
+  <div class="hero-pattern">
+    <div class="container hero-pattern-image-container">
+      <!-- Web Image -->
+      <img class="hero-pera-web-image" src="https://perawallet.s3.amazonaws.com/images/pera-web.png" alt="Pera Web">
+
+      <!-- Coin (optional) -->
+      <!-- <img class="hero-coin-image" src="https://perawallet.s3.amazonaws.com/images/coin.svg" alt="Coin Icon"> -->
+
+      <!-- Mobile Image -->
+      <img class="hero-pera-mobile-image" src="https://perawallet.s3.amazonaws.com/images/pera-mobile.png" alt="Pera Mobile">
+    </div>
+  </div>
+
+  <!-- Perspective Grid (background image at bottom) -->
+
+</div>
+
+<!-- Trusted Logos Section -->
+ <style>
+    .trusted-lms-wrap {
+   
+    padding: 120px 70px;
+    border-radius: 25px;
+}
+.trusted-lms-wrap .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #434e61;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+        @media (width >= 96rem) {
+        max-width: 1718px;
+    }
+}
+ 
